@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+            margin: 0px;
+          }
+           
+              .nav{
+                background-color: rgb(53, 101, 109);
+               /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-memphis-playful-portfolio-pink-image_593418.jpg");*/
+                background-repeat: no-repeat;
+                background-size: cover;
+
+              overflow: hidden;
+              position: fixed;
+             
+              width: 100%;
+
+              padding-left: 175px;
+                display: inline-flex;
+                align-items: baseline;
+               color: rgb(78, 68, 68);
+             /* width: auto;*/
+               border: 0px solid black;
+
+               
+              }
+              .cell{
+                position: relative;
+                top: 10px;
+              }
+              a{
+               
+                 padding: 50px;
+                 color: rgb(182, 119, 119);
+              }
+              a:hover {
+                color: green;
+              }
+              .num{
+               border: 2px solid rgb(239, 231, 231);
+               border-radius: 20px;
+               height: 30px;
+               padding-top: 10px;
+               text-align: center;
+               justify-content: center;
+               width: 100px;
+              }
+              .circle{
+                border: 0px solid white;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                color: white;
+                background-color: white;
+               
+              }
+              .container2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+                gap: 700px;
+               height: 100vh;
+                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-memphis-playful-portfolio-pink-image_593418.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .container3{
+                display: flex;
+                background-color: white;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+                gap: 50px;
+                
+              }
+              .profile{
+                border: 0x solid black;
+                height: 500px;
+                width: 700px;
+                text-align: center;
+               border-radius: 30px;
+             
+              }
+              .pcontent{
+                border: 0px solid rgb(226, 237, 226);
+                border-radius: 30px;
+                height: 400px;
+                width: 700px;
+               background-color: rgb(250, 254, 252);
+               line-height: 200%;
+               text-align: left;
+               font-size: large;
+               
+              }
+              .myimg{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                
+              }
+              .p{
+                font-style: normal;
+                text-decoration: solid;
+                color: green;
+                padding: 10px;
+                border-radius: 20px;
+                background-color: white;
+              }
+              .p2{
+                border: 0px solid black;
+                width: 80px;
+                padding: 10px;
+                border-radius: 20px;
+                text-align: center;
+                background-color: rgb(46, 46, 125);
+                color: white;
+              }
+              .hello1{
+                display: flex;
+                gap: 10px;
+                
+              }
+              .hello{
+              
+                width: 100px;
+                height:20px ;
+                padding: 10px;
+                border-radius: 20px;
+               text-align: center;
+                text-align: center;
+                background-color: white;
+               
+              }
+              .container4{
+                display: flex;
+                border: 0px solid red;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+             
+              }
+              .review{
+                display: grid;
+                grid-template-columns: auto auto ;
+              border: 0px solid black;
+              width: 800px;
+              height: 400px;
+              row-gap: 5px;
+              column-gap: 5px;
+             padding-left: 200px;
+             padding-top: 9px;
+             padding-bottom: 5px;
+               
+              }
+              .tablecan{
+                border: 0px solid red;
+                width: 600px;
+                height: 400px;
+                background-color: whitesmoke;
+              }
+              #id{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(71, 126, 134);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                color: white;
+              }
+              .grid{
+                border: 0px solid red;
+                text-align: left;
+              padding-left: 40px;
+              padding-top: 50px;
+                justify-content: center;
+                background-color: whitesmoke;
+              }
+              .table{
+                border: 0px solid white;
+                width: 800px;
+                height: 400px;
+                border-collapse: ;
+                background-color: aliceblue;
+               
+              }
+              .tr1{
+                background-color:whitesmoke;
+                
+              }
+              .tr{
+                background-color: white;
+              }
+              .td{
+                border: 0px solid black;
+                padding-left: 20px;
+              }
+              .td1{
+                color: green;
+                padding-left: 40px;
+                width: 100px;
+              }
+              .adds{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+              }
+              .img{
+                width: 200px;
+              }
+
+              .container5{
+                border: 0px solid black;
+                text-align: center;
+                background-color: white;
+              }
+              img:hover{
+                width: 300px;
+              }
+              .container6{
+                border: 0px solid black;
+                margin-top: 30px;
+                margin-left: 380px;
+                margin-right: 380px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                /*flex-direction: column;*/
+                background-color: rgb(71, 126, 134);
+                border-radius: 5px;
+                color: white;
+              }
+              .reviewCon{
+                color: green;
+              }
+              .container7{
+                border: 0px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 80px;
+                margin-top: 0px;
+               padding-bottom: 50px;
+                background-color: whitesmoke;
+              }
+              .card1{
+                border:0px solid black;
+                width: 300px;
+                height: 300px;
+               padding: 20px;
+               background-color: white;
+               border-radius: 20px;
+              }
+              .card2{
+                border:0px solid black;
+                width: 300px;
+                height: 300px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 20px;
+              }
+              .cardC1{
+                  margin-top: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+              }
+              .cardC2{
+                display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+              }
+            .cons{
+              background-color: whitesmoke;
+            }
+
+            .container8{
+              display: flex;
+              border: 0px solid black;
+             padding-bottom: 50px;
+             padding-top: 50px;
+              justify-content: center;
+              gap: 20px;
+              height: 620px;
+             
+            }
+            .cardp{
+              border: 3px solid whitesmoke;
+              width: 150px;
+              height: 30px;
+              text-align: center;
+              justify-content: center;
+              padding-top: 10px;
+              border-radius: 20px;
+            }
+            .project1{
+              border: 0px solid red;
+              width: 450px;
+              height: 600px;
+             background-color: white;
+            }
+            .project2{
+              display: flex;
+              flex-direction: column;
+              border: 0px solid red;
+              width: 900px;
+              height: 600px;
+              background-color: white;
+            }
+            .projectwork{
+              display: flex;
+              justify-content: center;
+              border: 0px solid rgb(81, 19, 173);
+              gap: 20px;
+            }
+            .c1{
+              margin-top: 30px;
+              border: 0px solid rgb(128, 0, 79);
+              width: 440px;
+              height: 460px;
+              border-radius: 20px; 
+              background-color: whitesmoke;
+            }
+            .img1{
+              width: 380px;
+              height:340px ;
+              padding-top: 28px;
+              padding-left: 20px;
+             transform: rotate(5deg);
+             object-fit: cover;
+             border-radius: 20px;
+            }
+            .ptitle{
+              border: 0px solid yellow;
+              height: 00px;
+              background-color: rgb(71, 126, 134);
+              border-radius: 10px;
+            }
+            .ptitle1{
+              border: 0px solid yellow;
+              height: 100px;
+              background-color: white;
+            }
+            .font8{
+              font-family: monospace;
+            }
+           
+
+            .container9{
+             display: flex;
+              border: 0px solid black;
+             padding-bottom: 50px;
+             padding-top: 50px;
+              justify-content: center;
+              gap: 20px;
+              height: 620px;
+              background-color: whitesmoke;
+            }
+            .sayhi{
+              width: 70px;
+              height: 70px;
+              border-radius: 50px;
+            }
+            .feedback{
+              display: flex;
+              gap: 15px;
+              background-color: whitesmoke;
+            }
+            .project5{
+              border: 0px solid red;
+              width: 450px;
+              height: 620px;
+              background-color: whitesmoke;
+            }
+            .project6{
+              background-color: whitesmoke;
+              border: 0px solid red;
+              width: 900px;
+              height: 620px;
+            }
+           .entery{
+            display: flex;
+            gap: 15px;
+            margin-top: 70px;
+           }
+           input{
+           width: 220px;
+           height: 40px;
+           
+           }
+           .button{
+            display: flex;
+            gap: 13px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+           }
+           .a1{
+                border: 0px solid black;
+                width: 100px;
+                height: 70px;
+                
+                background-color: white;
+           }
+           .input2{
+            width: 443px;
+            height: 100px;
+           text-align: center;
+           }
+           .c3{
+            margin-top: 50px;
+              border: 0px solid green;
+              width: 440px;
+              height: 460px;
+             background-color: white;
+           }
+            .ptitle{
+              border: 0px solid yellow;
+              height: 100px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: rgb(71, 126, 134);
+              
+              
+            }
+            .ptitle2{
+              border: 0px solid yellow;
+              height: 100px;
+              background-color:;
+            }
+            
+           
+            .services{
+              display: grid;
+              grid-template-columns: 100px 100px;
+              grid-template-rows: 50px 50px;
+              padding-left: 30px;
+              row-gap: 5px;
+              column-gap: 5px;
+              border: 0px solid red;
+             
+            }
+            #grid2{
+            border: 0px solid whitesmoke;
+            border-radius: 20px;
+             width:80px ;
+             height: 25px;
+             text-align: center;
+              justify-content: center;
+              padding-top: 5px;
+            }
+            #grid3{
+              border: 0px solid whitesmoke;
+              border-radius: 20px;
+              height: 25px;
+              width:90px;
+              text-align: center;
+              justify-content: center;
+              padding-top: 5px;
+            }
+            #grid4{
+              border:0px solid whitesmoke ;
+              height: 25px;
+              border-radius: 20px;
+              text-align: center;
+              justify-content: center;
+              padding-top: 5px;
+            }
+            #grid5{
+              width: 60px;
+              border:2px solid whitesmoke ;
+              height: 25px;
+              border-radius: 20px;
+              text-align: center;
+              justify-content: center;
+              padding-top: 5px;
+            }
+            .icons{
+              display: flex;
+              gap: 30px;
+              padding-left: 30px;
+            }
+            .send{
+              border: 0px solid green;
+              width: 100px;
+              height: 30px;
+              border-radius: 20px;
+              text-align: center;
+              justify-content: center;
+              padding-top: 10px;
+              margin-left: 350px;
+              background-color: green;
+              color: white;
+            }
+            .pad{
+              padding-left: 20px;
+            }
+            .font{
+              
+              font-weight: 100;
+            }
+            footer{
+              display: flex;
+              gap: 40px;
+              text-align: center;
+              justify-content: center;
+            }
+           
+              
+        </style>
+        <script src="https://kit.fontawesome.com/4382405188.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <div class="container1" id="hello1">
+        <div class="nav">
+            <h1 style="color: white;">First</h1>
+            <div>
+            <a href="#hello1">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+            
+            </div>
+
+            <span style="margin-left: 200px; margin-right: 10px; "> <div class="cell"><i class="fa-solid fa-phone fa-2x "></i></div></span>
+            <p class="num"> 
+               120-240-9600
+                
+            </p>
+        </div>
+        </div>
+        <div class="container2">
+<div>
+  <div class="hello1" >
+ <div> <img src="21915A3501.jpeg" alt="" class="myimg"></div>
+    <div class="hello">Hello friend!</div>
+  </div>
+    <p class="p">I'm available for freelance work.</p>
+   <p class="p2">Lets begin</p>
+</div>
+<div class="circle">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/019/572/non_2x/man-working-on-laptop-with-idea-png.png" alt="" height="250px" width="340px">
+</div>
+        </div>
+  
+    <div class="container3">
+          <div>
+            <img src="https://img.freepik.com/premium-photo/sick-wife-husband-bed-with-laptop_85869-8886.jpg" alt="" style="border-radius: 5%; width: 700px; height: 500px;">
+            
+          </div>
+          <div class="profile" >
+            <div id="id">
+              <img class="sayhi" src="21915A3501.jpeg" alt="">
+             <h3>My Story</h3>
+            
+          </div>
+            <div class="pcontent">
+                <h2>a little bit about Jyothibasu</h2>
+                <p>This one-page HTML portfolio is provided by TemplateMo.
+<br>
+                This layout is based
+                  on Bootstrap v5.1.3 CSS and JS libraries. <br>Image credits goto Unsplash
+                  and FreePik for images used in this page.
+                </p>
+                <p>
+                  You are allowed to use this template for your websites.You are not allowed to redistribute the 
+                  template ZIP file on any other <br>Please contact us for more info.
+                </p>
+
+            </div>
+          </div>
+    </div>
+    <div class="container4">
+      <div class="tablecan" >
+<table class="table">
+
+  <th id="about">Information </th>
+    <tr class="tr1">
+      <td class="td1">
+        Name
+      </td>
+      <td class="td">Boda Jyothibasu</td>
+    </tr>
+    <tr class="tr">
+      <td class="td1">Birthday</td>
+      <td class="td">June 17, 2002</td>
+    </tr>
+    <tr class="tr1">
+      <td class="td1">Phone</td>
+      <td class="td">6302284767</td>
+    </tr>
+    <tr class="tr">
+      <td class="td1">Email</td>
+      <td class="td">jyothibasuboda@gmail.com</td>
+    </tr>
+ 
+</table>
+      </div>
+      <div class="review">
+<div class="grid"><h1>20+</h1><p class="reviewCon">Years of Experiences</p></div>
+<div class="grid"><h1>245</h1><p class="reviewCon">Happy Customers</p></div>
+<div class="grid"><h1>640</h1><p class="reviewCon">Project Finished</p></div>
+
+<div class="grid"><h1>72+</h1><p class="reviewCon">Digital Awards</p></div>
+      </div>
+    </div>
+    <div class="container5">
+      <h1>Companies I've had worked</h1>
+      <div class="adds">
+        <div>
+          <img class="img" src="https://cdn.freebiesupply.com/logos/thumbs/2x/cachet-logo.png" alt="">
+        </div>
+        <div><img class="img" src="https://logowik.com/content/uploads/images/guitar-center-new-20223184.jpg" alt=""></div>
+        <div><img class="img" src="https://seeklogo.com/images/T/tokico-logo-4C7BC13AA8-seeklogo.com.png" alt=""></div>
+        <div><img class="img" src="https://thumbs.dreamstime.com/b/green-bag-logo-template-icon-vector-design-175470243.jpg" alt=""></div>
+        <div><img class="img" src="https://logovector.net/wp-content/uploads/2012/08/75464-profil-rejser-logo.gif" alt=""></div>
+      </div>
+    </div>
+    <div class="cons">
+    <div class="container6">
+   
+        <div><img class="sayhi" src="shake_hand.jpg" alt=""></div>
+        <div id="services">Services</div>
+      
+    </div>
+    </div>
+    <div class="container7">
+      <div class="cardC1">
+        <div class="card1">
+          <h3>Websites</h3>
+          <hr>
+          <p>You may want to explore Too CSS for great collection of free HTML CSS templates.</p>
+         <p class="cardp">Discover More</p>
+         <p style="padding-left: 250px; padding-top: 50px;"><i class="fa-solid fa-globe fa-2x"></i></p>
+         <img src="" alt="">
+        </div>
+        <div class="card1">
+          <h3>Ecommerce</h3>
+          <hr>
+         <p>If you need a customised ecommerce website for your bussiness. feel free to discuss with me</p> 
+         <p class="cardp">Discover More</p>
+         <p style="padding-left: 250px; padding-top: 50px;"><i class="fa-solid fa-mobile-screen-button fa-2x"></i></p>
+        </div>
+      </div>
+      <div class="cardC2">
+        <div class="card2">
+          <h3>Branding</h3>
+          <hr>
+          <p>You can explore more CSS templates on TemplateMo website
+            by browsing through different tags
+          </p>
+          
+          <p class="cardp">Discover More</p>
+          <p style="padding-left: 250px; padding-top: 50px;"><i class="fa-regular fa-lightbulb fa-2x "></i></p>
+        </div>
+        <div class="card2">
+          <h3>SEO</h3>
+          <hr>
+          <p>To list your website first on any search engine.we will work
+            toghter.First Portfolio is one-page CSS Template for free download.
+          </p>
+          <p class="cardp">Discover More</p>
+          <p style="padding-left: 250px; padding-top: 50px;"><i class="fa-brands fa-google fa-2x"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="container8">
+      <div class="project1">
+        <div class="ptitle1"></div>
+        <div class="c1">
+          <p class="pad">BRANDING</p>
+          <h3 class="pad font1">Zoik agency</h3>
+         <img style="width: 400px; height: 370px; padding-left: 20px;" src="Zoik symbol.jpg" alt="">
+        </div>
+          
+       </div>
+       <div class="project2">
+        <div class="ptitle">
+          <img class="sayhi" src="keybord mouse.jpg" alt="">
+          <h3 style="color: white; padding-left: 10px;" id="projects">Projects</h3>
+        </div>
+        <div class="projectwork">
+          <div class="c1">
+            <p class="pad">PHOTOGRAPHY</p>
+            <h3 class="pad font1" >The Watch</h3>
+            <img style="width: 400px; height: 370px; border-radius: 30px; padding-left: 20px;" src="watch on hand.jpg" alt="">
+          </div>
+          <div class="c1">
+            <p class="pad">WEBSITE</p>
+            <h3 class="pad font1">Polo</h3>
+            <img style="width: 400px; height: 370px; border-radius: 20px; padding-left: 20px; class="img1" src="a girl operating laptop.jpg" alt="">
+          </div>
+        </div>
+       </div>
+    </div>
+    <div class="container9">
+      <div class="project6">
+        <div class="ptitle">
+          <img class="sayhi" src="typing laptop.jpg" alt="">
+          <h3 style="color: white; padding-left: 10px;" id="contact">Say Hai</h3>  
+        </div>
+        <div class="feedback">
+          <div class="c3">
+           <h3 class="pad font">SERVICES</h3>
+               <div class="services">
+                  <p id="grid2">Websites</p>
+                  <p id="grid3">Branding</p>
+                 
+                  <p id="grid4">Ecommerce</p>
+                  <p id="grid5">SEO</p>
+                </div>
+                      <br>
+                      
+                <h3 class="pad font">STAY CONNECTED</h3><br>
+              <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div><br>
+              <h3 class="pad font">START A PROJECT</h3>
+              <p class="pad">I'm available for freelance projects</p><br>
+            </div>
+          <div class="c3">
+            <h3 class="pad font">ABOUT</h3>
+            <p class="pad">Jyothibasu is a professional web developer.
+              <br> 
+              Feel free to get in touch with me.
+            </p><br>
+            <h3 class="pad font">Email</h3>
+            <p class="pad">Jyothibasuboda@gmail.com</p><br>
+            <h3 class="pad font">CALL</h3>
+            <p class="pad">6302284767</p>
+          </div>
+
+        </div>
+       </div>
+       <div class="project5">
+        <div class="ptitle2"></div>
+        
+        <div class="entery">
+            <input type="text" value="Name">
+           
+           <input type="email" value="Email address">
+          </div>
+           <div class="button">
+            <div class="a1">
+            <p><i class="fa-solid fa-globe"></i></p>
+           <p >Websites</p>
+          </div>
+           <div class="a1">
+            <p><i class="fa-regular fa-lightbulb"></i></p>
+          <p >Branding</p>
+        </div>
+        <div class="a1">
+          <p> <i class="fa-solid fa-mobile-screen-button"></i></p>
+          <p >Ecommerce</p>
+        </div>
+        <div class="a1">
+          <p> <i class="fa-brands fa-google"></i></p>
+          <p >SEO</p>
+        </div>
+        </div>
+          
+          <input class="input2" type="text" value="Tell me about the project">
+        <p class="send">Send</p>
+       </div>
+    </div>
+
+    <footer>
+     <p>Copyright<i class="fa-regular fa-copyright"></i> 2036 First Portfolio Company, All rights reserver.</p>
+     <p>Design: TemplateMo</p>
+    </footer>
+    
+    </body>
+</html>
